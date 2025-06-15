@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  background-color: #f4f8fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #d17f13;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.auth-status {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-msg {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: #e81123;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #c50f1f;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px);
+  padding: 20px;
+}
+
+.auth-container,
+.upload-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.login-btn {
+  background-color: #d17f13;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #dad22f;
+}

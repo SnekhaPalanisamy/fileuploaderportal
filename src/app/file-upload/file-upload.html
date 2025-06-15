@@ -1,0 +1,18 @@
+<div class="upload-container">
+  <h2>Upload Profile Image or Document</h2>
+
+  <div class="upload-box">
+    <input type="file"  #fileInput (change)="onFileSelected($event)" />
+    <button class="upload-btn" (click)="uploadFile(fileInput)" [disabled]="!selectedFile">Upload</button>
+  </div>
+
+  <p *ngIf="uploadStatus" class="success-message">{{ uploadStatus }}</p>
+
+  <ul class="file-list">
+    <li *ngFor="let file of listFiles" class="file-item">
+      <a [href]="" target="_blank">{{ file }}</a>
+      <button class="btn btn-delete" (click)="deleteFile(file)">Delete</button>
+      <button class="btn btn-download" (click)="downloadFile(file)">Download</button>
+    </li>
+  </ul>
+</div>
