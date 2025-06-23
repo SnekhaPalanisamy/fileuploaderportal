@@ -7,6 +7,7 @@ import { MsalBroadcastService, MsalModule, MsalRedirectComponent, MsalService } 
 import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
 import { FileUpload } from './file-upload/file-upload';
 import { HttpClientModule } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
         auth: {
           clientId: 'c51d45bf-1e0a-4bf2-8177-928ba4ca47c1',      // Replace with your App ID
           authority: 'https://login.microsoftonline.com/8823be7a-6d3a-42e4-a9ed-80c540109960', // Replace with your tenant ID
-          redirectUri: 'https://calm-plant-03b2c7d0f.6.azurestaticapps.net/',
+          redirectUri: environment.launchurl,
         },
         cache: {
           cacheLocation: 'localStorage',
