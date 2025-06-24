@@ -1,59 +1,38 @@
-# FileUploaderPortal
+# File Upload Portal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+## Overview
+The **File Upload Portal** is a secure web-based tool for uploading, downloading, and deleting files. It is designed to streamline file management using modern serverless architecture and secure authentication via Azure Active Directory (Azure AD). Built for scalability, this solution is ideal for internal tools, document repositories, or lightweight CMS use cases.
 
-## Development server
+## Features
+- Upload files to Azure Blob Storage through a user-friendly interface  
+- List, download, and delete files from the portal  
+- Secure access using **Azure AD authentication**  
+- Scalable, serverless backend with **Azure Functions**  
+- Real-time feedback for file status and actions  
+- CI/CD pipeline for deployment to Azure Static Web App  
 
-To start a local development server, run:
+## Technologies Used
+- **Frontend:** Angular  
+- **Backend:** Azure Functions (.NET Core)  
+- **Authentication:** Azure Active Directory (AD)  
+- **Storage:** Azure Blob Storage  
+- **CI/CD:** Azure DevOps Pipelines  
+- **Hosting:** Azure Static Web Apps  
 
-```bash
-ng serve
-```
+## Screenshots
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Azure AD login  
+![login-azure ad](https://github.com/user-attachments/assets/ab7b9598-806c-45a2-b2f8-12dd85a73306)
 
-## Code scaffolding
+### File Uploader Portal
+![FileUpload-Main ](https://github.com/user-attachments/assets/0b590d5c-7fac-47ac-8a7a-9b0be1ca1eb4)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-```bash
-ng generate component component-name
-```
+## Deployment
+The portal is deployed using **Azure Static Web Apps** and **Azure DevOps** for automated CI/CD. Backend logic is hosted in **Azure Functions**, and all files are securely stored in **Azure Blob Storage** with restricted access via Azure AD login.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Contributing
+This project is intended for demonstration and upskilling purposes. Contributions or suggestions are welcome through pull requests or issues.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## ⚠️ Usage Notice
+This code is provided for educational and demo purposes only. Do not reuse or redistribute without permission.
