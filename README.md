@@ -31,8 +31,3 @@ The **File Upload Portal** is a secure web-based tool for uploading, downloading
 ## Deployment
 The portal is deployed using **Azure Static Web Apps** and **Azure DevOps** for automated CI/CD. Backend logic is hosted in **Azure Functions**, and all files are securely stored in **Azure Blob Storage** with restricted access via Azure AD login.
 
-## Contributing
-This project is intended for demonstration and upskilling purposes. Contributions or suggestions are welcome through pull requests or issues.
-
-## ⚠️ Usage Notice
-This code is provided for educational and demo purposes only. Do not reuse or redistribute without permission.
